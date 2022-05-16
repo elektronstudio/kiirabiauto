@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/elektro/dist/style.css" rel="stylesheet" />
+    <style>
+      .app {
+        display: grid;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 3fr);
+      }
+      @media only screen and (max-width: 600px) {
+        .app {
+          display: block;
+        }
+      }
+      .intro {
+        padding: var(--p-8);
+        padding-right: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: font-title-regular, sans-serif;
+        font-weight: bold;
+      }
+      h1 {
+        font-size: 3rem;
+        line-height: 100%;
+        margin-bottom: var(--p-8);
+      }
+      h2 {
+        font-size: 2rem;
+        line-height: 100%;
+        margin-bottom: var(--p-8);
+      }
+      .embedsocial-stories {
+        padding: var(--p-8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="intro">
+        <h1>Tahan osta kiirabiautot</h1>
+        <p>
+          EKA kaasaegse kunsti lõpetaja Mathias Väärsi alustab 23.05 sõitmist
+          Narvast rattaga mööda piiri äärt Ukrainasse. Eesmärk, lisaks
+          kunstilisele taotlusele on ka praktiline, koguda annetusi kiirabi auto
+          ostmiseks.
+        </p>
+        <br />
+        <a
+          target="_blank"
+          href="https://sportrec.eu/gps/tahan-osta-kiirabiautot"
+          ><br />
+          <h3>Jälgi Mathiase teekonda reaalajas &rarr;</h3>
+        </a>
+        <br />
+        <a target="_blank" href="https://www.instagram.com/mathias5000">
+          <h3>Jälgi Mathiast Instagramis &rarr;</h3>
+        </a>
+      </div>
+      <div
+        class="embedsocial-stories"
+        data-ref="97a1fce22415f53ce869f22d53c5c1514f247ed6"
+      ></div>
+      <iframe
+        src="https://sportrec.eu/gps/tahan-osta-kiirabiautot"
+        style="width: 100%; height: 100vh"
+      ></iframe>
+      <script>
+        (function (d, s, id) {
+          var js;
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://embedsocial.com/embedscript/st.js";
+          d.getElementsByTagName("head")[0].appendChild(js);
+        })(document, "script", "EmbedSocialStoriesScript");
+      </script>
+    </div>
+  </body>
+</html>
