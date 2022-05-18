@@ -9,7 +9,7 @@
     <style>
       .app {
         display: grid;
-        grid-template-columns: minmax(0, 2fr) minmax(0, 2fr) minmax(0, 3fr);
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr) minmax(0, 3fr);
       }
       @media only screen and (max-width: 600px) {
         .app {
@@ -19,6 +19,9 @@
       .intro {
         padding: var(--p-8);
         padding-right: 0;
+      }
+      p {
+        letter-spacing: 0.01em;
       }
       h1,
       h2,
@@ -42,6 +45,18 @@
       .embedsocial-stories {
         padding: var(--p-8);
       }
+      .button {
+        margin: 16px 0;
+        font-weight: bold;
+        display: inline-block;
+        border: 2px solid hsl(39, 100%, 54%);
+        color: hsl(39, 100%, 54%);
+        border-radius: 5px;
+        padding: 8px 16px;
+      }
+      .button:hover {
+        background-color: hsl(39, 100%, 54%, 0.2);
+      }
     </style>
   </head>
   <body>
@@ -49,39 +64,53 @@
       <div class="intro">
         <h1>Tahan osta kiirabiautot</h1>
         <p>
-         Mai 2022, kolmandat kuud kestab sõda. Meie idanaabrid, Putini venelased pommitavad ukrainlaste kodusid, 
-         tapavad süütuid inimesi, vägistavad naisi ja lapsi. Täiesti ahastusse ajav ja mõtlemist halvav olukord. 
-         Praeguseks on pildid laipadest muutunud suure osa inimeste jaoks nii tavapäraseks, et ei tekita enam reaktsioone. 
-         Tuleb uusi meetodeid leiutada, et tähelepanu üleval hoida.
-         <p> 
-         <br />
-         Sõidan rattaga Narvast mööda Vene ja Valgevene piiri Ukrainani. Selle mitmepäevase aktsiooniga loodan inimesi 
-         annetama motiveerida. Alustan sõitu 23. mail, distants on umbes 1700 km, mille läbimiseks peaks kuluma umbes nädal. 
-         elektron.art platvormil ja installatsioonis TASE-l saab jälgida minu teekonda. Soovin tuua olukorra peopeale 
-         näitusekülastajatele, näidata kui lähedal see on – vaid mõne päeva rattasõidu kaugusel. Samuti juhin tähelepanu, et 
-         kogu teekond kulgeb mööda vaenulike naabrite piiri, kus abstraktsest ohutundest saab reaalne taju.
-         <p>
-         <br />
-         Kogun annetusi, mis lähevad MTÜ Slava Ukrainile, tahan just neid aidata, sest nad töötavad efektiivselt ja täpselt, 
-         suunates abi sinna, kus seda vaja on. 
-         <p>
-         <br />
-         Eesmärk on koguda 15 000€, umbes nii palju maksab kiirabiauto. 
-            <br />
-        <a
-          target="_blank"
-          href="https://toeta.me/projects/ambulances-slava-ukrainy-ngo/"
-          ><br />
-          <h3>Oma toetuse saad anda siin &rarr;</h3>
-        </a>
-        <br />
- 
+          Mai 2022, kolmandat kuud kestab sõda. Meie idanaabrid, Putini
+          venelased pommitavad ukrainlaste kodusid, tapavad süütuid inimesi,
+          vägistavad naisi ja lapsi. Täiesti ahastusse ajav ja mõtlemist halvav
+          olukord. Praeguseks on pildid laipadest muutunud suure osa inimeste
+          jaoks nii tavapäraseks, et ei tekita enam reaktsioone. Tuleb uusi
+          meetodeid leiutada, et tähelepanu üleval hoida.
+        </p>
+
         <p>
-         Mathias Väärsi sündis 23. detsembril 1988. aastal kell 23.55 Tartu sünnitusmajas. Nimi pandi talle harrastuslendur 
-         Mathias Rusti järgi, kes lendas 28. mail 1988 ilma loata läbi NSV Liidu väidetavalt läbitungimatu õhukaitsesüsteemi. 
-         Antud projekt on Väärsi kaasaegse kunsti magistrantuuri lõputöö EKAs.
+          <br />
+          Sõidan rattaga Narvast mööda Vene ja Valgevene piiri Ukrainani. Selle
+          mitmepäevase aktsiooniga loodan inimesi annetama motiveerida. Alustan
+          sõitu 23. mail, distants on umbes 1700 km, mille läbimiseks peaks
+          kuluma umbes nädal. elektron.art platvormil ja installatsioonis TASE-l
+          saab jälgida minu teekonda. Soovin tuua olukorra peopeale
+          näitusekülastajatele, näidata kui lähedal see on – vaid mõne päeva
+          rattasõidu kaugusel. Samuti juhin tähelepanu, et kogu teekond kulgeb
+          mööda vaenulike naabrite piiri, kus abstraktsest ohutundest saab
+          reaalne taju.
+        </p>
 
+        <p>
+          <br />
+          Kogun annetusi, mis lähevad MTÜ Slava Ukrainile, tahan just neid
+          aidata, sest nad töötavad efektiivselt ja täpselt, suunates abi sinna,
+          kus seda vaja on.
+        </p>
 
+        <p>
+          <br />
+          Eesmärk on koguda 15 000€, umbes nii palju maksab kiirabiauto.
+          <br />
+          <a
+            class="button"
+            target="_blank"
+            href="https://toeta.me/projects/ambulances-slava-ukrainy-ngo/"
+            >Oma toetuse saad anda siin &rarr;
+          </a>
+          <br />
+        </p>
+
+        <p>
+          Mathias Väärsi sündis 23. detsembril 1988. aastal kell 23.55 Tartu
+          sünnitusmajas. Nimi pandi talle harrastuslendur Mathias Rusti järgi,
+          kes lendas 28. mail 1988 ilma loata läbi NSV Liidu väidetavalt
+          läbitungimatu õhukaitsesüsteemi. Antud projekt on Väärsi kaasaegse
+          kunsti magistrantuuri lõputöö EKAs.
         </p>
         <br />
         <a
